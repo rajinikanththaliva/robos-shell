@@ -1,5 +1,5 @@
 echo -e "\e[36m Installing nginx servie \e[0m"
-yum install nginx -yum
+yum install nginx -y
 echo -e "\e[36m Removing default server content \e[0m"
 cd /usr/share/nginx/html
 rm -rf *
