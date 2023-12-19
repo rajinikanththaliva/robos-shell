@@ -1,7 +1,7 @@
 echo -e "\e[36m Installing nginx \e[0m"
 yum install nginx -y
 echo -e "\e[36m Removing default content \e[0m"
-cd /usr/share/nginx/html  &>>/tmp/roboshop.log
+cd /usr/share/nginx/html
 rm -rf *
 echo -e "\e[36m Downloading custom server content \e[0m"
 curl -O   https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
