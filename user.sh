@@ -16,7 +16,7 @@ systemctl daemon-reload
 echo -e "\e[36m Downloading and loading the mongodb schema \e[0m"
 cp /root/robos-shell/mongodb.repo   /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
-mongo --host mongodb.surendra.shop </app/schema/catalogue.js
+mongo --host mongodb.surendra.shop </app/schema/user.js
 echo -e "\e[36m Enable and restarting the user service \e[0m"
 systemctl enable user
 systemctl restart user
