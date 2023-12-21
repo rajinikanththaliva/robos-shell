@@ -16,7 +16,7 @@ yum install mysql -y
 mysql -h mysql.surendra.shop -uroot -pRoboShop@1 < /app/schema/shipping.sql
 echo -e "\e[36m Enable and restarting the shipping service \e[0m"
 systemctl enable shipping
-systemctl start shipping
+systemctl restart shipping
 
 
 
