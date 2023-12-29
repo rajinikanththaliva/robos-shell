@@ -1,5 +1,5 @@
 echo -e "\e[36m Downloading nodejs repo \e[0m"
-curl -sL https://rpm.nodesource.com/setup_lts.x | bash
+curl -sL https://rpm.nodesource.com/setup_19.x | sudo -E bash -
 echo -e "\e[36m installing nodejs service \e[0m"
 yum install nodejs -y
 echo -e "\e[36m Adding user path \e[0m"
